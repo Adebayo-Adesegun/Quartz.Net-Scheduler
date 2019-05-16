@@ -13,11 +13,18 @@ namespace ConfirmMeWSQuartz
         LoggerBgServ _logger = new LoggerBgServ();
         public async Task Execute(IJobExecutionContext context)
         {
-            //call paystack service
+            // Call example service
             Service Service = new Service();
-            bool isTrue = await Service.TestService();
 
-            _logger.LogError($"The job was exscuted with {isTrue} as status");
+            bool isTrue = await Service.TestService();
+            if(isTrue)
+            {
+                _logger.LogError($"The job was executed with {isTrue} as status");
+            }
+            else
+            {
+                _logger.LogError($"The job was executed with {isTrue} as status");
+            }
         }
     }
 }

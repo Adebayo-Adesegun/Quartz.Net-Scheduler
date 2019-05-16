@@ -14,7 +14,7 @@ namespace ConfirmMeWSQuartz
             ITrigger trigger = TriggerBuilder.Create()
                 .WithDailyTimeIntervalSchedule
                   (s =>
-                     s.WithIntervalInSeconds(1) //Set an hour interval to run Job
+                     s.WithIntervalInSeconds(1) //Set a second interval to run Job
                     .OnEveryDay()
                     .StartingDailyAt(TimeOfDay.HourAndMinuteOfDay(0, 0))
                   )
