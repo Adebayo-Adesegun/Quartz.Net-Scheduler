@@ -10,7 +10,7 @@ namespace ConfirmMeWSQuartz
             IScheduler scheduler = StdSchedulerFactory.GetDefaultScheduler().Result; //making it an asynchronous call 
             scheduler.Start();
 
-            IJobDetail job = JobBuilder.Create<EmailJob>().Build();
+            IJobDetail job = JobBuilder.Create<ExamppleJob>().Build();
             ITrigger trigger = TriggerBuilder.Create()
                 .WithDailyTimeIntervalSchedule
                   (s =>

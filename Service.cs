@@ -18,6 +18,7 @@ namespace ConfirmMeWSQuartz
         {
             try
             {
+               
                 Console.WriteLine("Logged into console");
 
                 return true;

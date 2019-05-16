@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ConfirmMeWSQuartz
 {
-    public class EmailJob : IJob
+    public class ExamppleJob : IJob
     {
         LoggerBgServ _logger = new LoggerBgServ();
         public async Task Execute(IJobExecutionContext context)
