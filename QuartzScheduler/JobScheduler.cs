@@ -1,7 +1,7 @@
 ﻿using Quartz;
 using Quartz.Impl;
 
-namespace ConfirmMeWSQuartz
+namespace QuartzScheduler
 {
     public class JobScheduler
     {

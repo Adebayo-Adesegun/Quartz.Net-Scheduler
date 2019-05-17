@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ConfirmMeWSQuartz
+namespace QuartzScheduler
 {
     class Program
     {
